@@ -10,7 +10,7 @@ const app = express();
 app.use(cors())
 app.use(morgan('dev'))
 app.use(express.json())
-app.use(express.urlencoded({ extend: true }))
+app.use(express.urlencoded({ extended: true }))
 //--End of MiddleWare
 
 app.get('/', (req, res) => {
